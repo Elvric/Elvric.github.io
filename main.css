@@ -81,7 +81,6 @@ body {
     border-radius: 25px;
     word-wrap: break-word;
     height: 400px;
-    overflow-y: scroll;
     font-size: 40px;
 }
 
