@@ -6,8 +6,11 @@
 body {
     background-image: url("img/Montreal.jpg");
     background-position-x: 100%;
+    background-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-family: proxima nova;
+    background-repeat: no-repeat;
+    background-color: rgb(85, 190, 220)
 }
 
 /*
@@ -80,7 +83,6 @@ body {
     background-color: rgba(155,155,155,0.5);
     border-radius: 25px;
     word-wrap: break-word;
-    height: 400px;
     font-size: 40px;
 }
 
@@ -105,15 +107,18 @@ body {
   Projects page
   ========================================
 */
+
 .proj {
     text-align: center;
     color: black;
     margin: 4% 15%;
     background-color: white;
-    /* box-shadow: 0px 2px 10px gray;  */
+    box-shadow: 0px 2px 10px black; 
     border-radius: 5px;
     word-wrap: break-word;
     padding-bottom: 10px;
+    overflow-y: scroll;
+    max-height: 600px;
 }
 
 section:first-child {
@@ -170,12 +175,41 @@ section:first-child {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
     height: auto;
     background: black;
-    padding: 0 5%;
+    padding: 0 0;
     border-radius: 5px 5px 0 0;
+    max-height: 50em;
     border-bottom: 1px solid gray
+}
+
+.imgIll {
+    position: relative;
+    width: inherit;
+    height: 400px;
+    max-height: 50em;
+}
+
+#flashpoint {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FlashPointGameInProgress.jpg/800px-FlashPointGameInProgress.jpg");
+}
+
+#database {
+    background-image: url(img/database.jpg);
+    background-position-y: -800px; 
+    background-position-x: -400px;
+}
+
+#gravity {
+    background-image: url(img/gravity.png);
+    background-position-x: 50%; 
+}
+
+#crawler {
+    background-image: url(img/dongeonCrawler.png);
+    background-position-x: 50%; 
+    background-position-y: 600px
 }
 
 .proj.p3 img {
